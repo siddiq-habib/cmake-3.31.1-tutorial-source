@@ -1,2 +1,10 @@
 // the configured options and settings for Tutorial
 // TODO 10: Define Tutorial_VERSION_MAJOR and Tutorial_VERSION_MINOR
+
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+// Below one also work and is more generic, as the project
+// name might be changed from Tutorial
+#define Tutorial_ALT_VERSION_MAJOR ${${PROJECT_NAME}_VERSION_MAJOR}
+#define Tutorial_ALT_VERSION_MINOR ${${PROJECT_NAME}_VERSION_MINOR}
