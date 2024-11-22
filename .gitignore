@@ -1,9 +1,8 @@
 
 ######################## build folder ####################
 build/
-*_build/
 
-######################## for VSCdoe ####################
+######################## for VSCode ####################
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
