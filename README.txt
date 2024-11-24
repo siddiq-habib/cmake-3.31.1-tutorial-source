@@ -8,11 +8,11 @@ provides the complete solution for the previous step.
 
 #Example 1: with libary MathFunctions
 
-cmake -S ./Step2 -B ./build -DUSE_MYMATH=ON
-make -C ./build
+cmake -S ./Step2 -B ./build/Step2 -DUSE_MYMATH=ON
+make -C ./build/Step2
 
 #Exectuion of binary for the above build generation
-./build/Tutorial 10
+./build/Step2/Tutorial 10
 
 #Expected result
 The square root of 10 is 3.16228
@@ -20,11 +20,11 @@ The square root of 10 is 3.16228
 ======================================================================
 #Example 2: with mathlib library
 
-cmake -S ./Step2 -B ./build -DUSE_MYMATH=OFF
-make -C ./build
+cmake -S ./Step2 -B ./build/Step2 -DUSE_MYMATH=OFF
+make -C ./build/Step2
 
 #Exectuion of binary for the above build generation
-./build/Tutorial 10
+./build/Step2/Tutorial 10
 
 #Expected result
 Computing sqrt of 10 to be 5.5
